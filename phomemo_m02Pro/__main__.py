@@ -4,6 +4,7 @@
 
 import argparse
 import sys
+import time
 
 import PIL.Image
 import PIL.ImageDraw
@@ -47,6 +48,8 @@ if __name__ == "__main__":
 
     printer = phomemo_m02Pro.printer.Printer(args.port, args.mac)
     printer.initialize()
+    time.sleep(500)
+
     printer.reset()
     print("Serial number:", printer.get_serial_number())
     print("Firmware:", printer.get_firmware_version())
@@ -55,6 +58,8 @@ if __name__ == "__main__":
 
     printer.initialize()
     printer.align_center()
+
+    time.sleep(500)
 
     printer.print_image(args.image, width=args.width)
 
