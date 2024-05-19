@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
     printer = phomemo_m02Pro.printer.Printer(args.port, args.mac)
     printer.initialize()
-    time.sleep(500)
+    time.sleep(0.5)
 
     printer.reset()
     print("Serial number:", printer.get_serial_number())
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     printer.initialize()
     printer.align_center()
 
-    time.sleep(500)
+    time.sleep(0.5)
 
     printer.print_image(args.image, width=args.width)
 
