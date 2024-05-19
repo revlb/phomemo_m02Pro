@@ -1,3 +1,5 @@
+# THIS IS A CLONE OF theacodes' REPO FOR THE PHOMEMO M02S
+
 # Phomemo M02S Python library
 
 This is a basic Python library for controlling the [Phomemo M02S](https://phomemo.com/collections/phomemo-m02s) bluetooth thermal printer.
